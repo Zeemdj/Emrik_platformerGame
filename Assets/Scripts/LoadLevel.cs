@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Victory : MonoBehaviour
+public class LoadLevel : MonoBehaviour
 {
     public string SceneToLoad = "SampleScene";
 
