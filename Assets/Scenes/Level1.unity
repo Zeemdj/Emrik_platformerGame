@@ -1327,6 +1327,11 @@ Prefab:
       propertyPath: m_Name
       value: EnemyRat (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114530069695821422, guid: be9a1f17bfd3a8c4eb6a96290b0147a6,
+        type: 2}
+      propertyPath: SceneToLoad
+      value: Level1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be9a1f17bfd3a8c4eb6a96290b0147a6, type: 2}
   m_IsPrefabAsset: 0
@@ -1544,6 +1549,11 @@ Prefab:
     - target: {fileID: 4813015365414324, guid: be9a1f17bfd3a8c4eb6a96290b0147a6, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114530069695821422, guid: be9a1f17bfd3a8c4eb6a96290b0147a6,
+        type: 2}
+      propertyPath: SceneToLoad
+      value: Level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be9a1f17bfd3a8c4eb6a96290b0147a6, type: 2}
@@ -4196,6 +4206,11 @@ Prefab:
     - target: {fileID: 1172099500880808, guid: be9a1f17bfd3a8c4eb6a96290b0147a6, type: 2}
       propertyPath: m_Name
       value: EnemyRat (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114530069695821422, guid: be9a1f17bfd3a8c4eb6a96290b0147a6,
+        type: 2}
+      propertyPath: SceneToLoad
+      value: Level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be9a1f17bfd3a8c4eb6a96290b0147a6, type: 2}

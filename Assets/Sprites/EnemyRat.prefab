@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MinimumScoreNeeded: 0
-  SceneToLoad: Level1
+  SceneToLoad: Level2Contunie
 --- !u!114 &114738080676428476
 MonoBehaviour:
   m_ObjectHideFlags: 1
