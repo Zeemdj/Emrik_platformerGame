@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - InvisibleWall
+  - Ladder
+  - Door
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -13,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - EnemyTriggers
+  - Player
+  - Ground
   - 
   - 
   - 
@@ -41,12 +46,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ladder
+    uniqueID: 1984099015
+    locked: 0
   - name: Player
     uniqueID: 2668985059
+    locked: 0
+  - name: JustBehindGround
+    uniqueID: 3846193429
     locked: 0
   - name: Ground
     uniqueID: 1961637243
     locked: 0
   - name: Decoration
     uniqueID: 4037884345
+    locked: 0
+  - name: Objects
+    uniqueID: 4156461607
+    locked: 0
+  - name: EditorHelpers
+    uniqueID: 1311867837
     locked: 0

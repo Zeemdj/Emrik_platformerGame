@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1791310705578060}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 2, z: 0}
+  m_LocalPosition: {x: -14.03, y: 1.716, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -66,13 +66,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.33282995, y: 0.005452633}
+    - - {x: 0.33283046, y: -0.0070418715}
       - {x: 0.16629219, y: -0.49936235}
-      - {x: 0.00048542023, y: -0.0026578903}
+      - {x: 0.000506403, y: -0.008293153}
       - {x: -0.16755056, y: -0.4975108}
-      - {x: -0.3359375, y: 0}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
+      - {x: -0.33548358, y: -0.003120482}
+      - {x: -0.49611378, y: -0.5000001}
+      - {x: 0.5008955, y: -0.5034485}
 --- !u!114 &114701342973809516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,7 +84,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fd0a36b435b6d945a68fe0f71b5acee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: SampleScene
+  MinimumScoreNeeded: 0
+  SceneToLoad: Level2Continue
 --- !u!212 &212632687502509898
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -117,8 +118,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -138505689
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300134, guid: 08dd030f5746b2d419cb21fd4a6fade6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
