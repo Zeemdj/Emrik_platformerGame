@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyVerticalMovment : MonoBehaviour {
 
-    public float Speed = 2f;
-    public bool Left = true;
+    public float speed = 2f;
+    public bool left = true;
 
 
     private Rigidbody2D rbody;
@@ -21,7 +21,7 @@ public class EnemyVerticalMovment : MonoBehaviour {
     {
         if (collision.tag == "InvisibleWall")
         {
-            Left = !Left;
+            left = !left;
         }
     }
 
@@ -30,14 +30,14 @@ public class EnemyVerticalMovment : MonoBehaviour {
     private void FixedUpdate()
     {
 
-        if (Left == true)
+        if (left == true)
         {
-            rbody.velocity = -(Vector2)transform.up * Speed;
+            rbody.velocity = -(Vector2)transform.up * speed;
             transform.localScale = new Vector3(1, 1, 1);
         }
         else
         {
-            rbody.velocity = (Vector2)transform.up * Speed;
+            rbody.velocity = (Vector2)transform.up * speed;
             transform.localScale = new Vector3(-1, 1, 1);
         }
 

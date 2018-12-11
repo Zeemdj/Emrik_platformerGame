@@ -11,7 +11,7 @@ public class FrogSprite : MonoBehaviour
 
     void Update()
     {
-        if (groundCheck.IsGrounded > 0)
+        if (groundCheck.isGrounded > 0)
         {
             //Om "IsGrounded" är större än 0 så blir spriten "onGround" som man har valt i Unity.
             this.gameObject.GetComponent<SpriteRenderer>().sprite = onGround;

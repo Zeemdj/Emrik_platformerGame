@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovment : MonoBehaviour
 {
 
-    public float MoveSpeed = 6f;
-    public float JumpSpeed = 12f;
+    public float moveSpeed = 6f;
+    public float jumpSpeed = 12f;
 
     public GroundChecker GroundCheck;
 
@@ -21,14 +21,14 @@ public class PlayerMovment : MonoBehaviour
     //Gör så att man kan styra spelaren Horisontalt med knapparna som "Horizontal" är satt till (A,D /högerpil, vänsterpil)
     void Update()
     {
-        rbody.velocity = new Vector2(Input.GetAxis("Horizontal") * MoveSpeed,   rbody.velocity.y);
+        rbody.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed,   rbody.velocity.y);
 
         //Ger spelaren en "velocity" uppåt när man trycker "Jump" och nuddar marken så att man hoppar.
         if (Input.GetButtonDown("Jump"))
         {
-            if (GroundCheck.IsGrounded > 0)
+            if (GroundCheck.isGrounded > 0)
             {
-                rbody.velocity = new Vector2(rbody.velocity.x, JumpSpeed);
+                rbody.velocity = new Vector2(rbody.velocity.x, jumpSpeed);
             }
         }
     }
@@ -38,7 +38,7 @@ public class PlayerMovment : MonoBehaviour
     {
         if (collision.tag == "Ladder")
         {
-            rbody.velocity = new Vector2(Input.GetAxis("Vertical") * MoveSpeed, rbody.velocity.x);
+            rbody.velocity = new Vector2(Input.GetAxis("Vertical") * moveSpeed, rbody.velocity.x);
         }
     }
 }

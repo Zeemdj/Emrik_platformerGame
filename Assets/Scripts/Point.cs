@@ -7,9 +7,9 @@ public class Point : MonoBehaviour
     //"Static" variabeln är samma i alla scripts och tillgänglig från alla scripts
     public static int score;
 
-    public int Amount = 1;
+    public int amount = 1;
 
-    private float SpinSpeed = 180;
+    private float spinSpeed = 180;
 
     //När "Player" går in i en "coin" så försvinner den och "Player" får ett poäng
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,13 +17,13 @@ public class Point : MonoBehaviour
         if (collision.tag == "Player")
         {
             Destroy(gameObject);
-            Point.score += Amount;
+            Point.score += amount;
         }
     }
 
     //Roterar objektet
     private void Update()
     {
-        transform.Rotate(0, SpinSpeed * Time.deltaTime, 0);
+        transform.Rotate(0, spinSpeed * Time.deltaTime, 0);
     }
 }
